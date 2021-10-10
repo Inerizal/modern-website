@@ -60,6 +60,31 @@ code, pre {
     height: 0;
 }
 
+/* Welcome section */
+.welcome {
+    height: 40rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+.welcome-card {
+    position: relative;
+    top: 50%;
+    height: 35rem;
+    width: 40rem;
+    padding: 4rem;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.right {
+    animation: slideInFromRight 1s ease-in;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
