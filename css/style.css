@@ -77,6 +77,28 @@ code, pre {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+.welcome .grid {
+    overflow: visible;
+    grid-template-columns: 59% 41%;
+    gap: 3rem;
+}
+
+.welcome::before, 
+.welcome::after {
+    content: '';
+    position: absolute;
+    height: 10rem;
+    bottom: -7rem;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
 .left {
     animation: slideInFromLeft 1s ease-in;
 }
